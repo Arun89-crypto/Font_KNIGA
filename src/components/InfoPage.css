@@ -1,0 +1,25 @@
+.info__page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about__text {
+  padding: 20px;
+  width: 50%;
+}
+.about__text > h1 {
+  font-size: 50px;
+  padding-bottom: 20px;
+}
+.image__abt {
+  width: 50%;
+  margin: 5%;
+}
+.about__text > div {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+.about__text > div > img {
+  margin: 10px;
+}
