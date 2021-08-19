@@ -1,4 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Style+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=WindSong&display=swap");
+
 * {
   padding: 0px;
   margin: 0px;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+/* PREDEFINED CLASSES */
+
+.flex__center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex__around {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex__center__vert {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.flex__around__vert {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.width__full {
+  width: 100%;
+}
+.width__full__pad_1 {
+  width: 98%;
+  padding: 1%;
+}
+.width__full__pad_2half {
+  width: 95%;
+  padding: 2.5%;
+}
+.width__full__pad_5 {
+  width: 90%;
+  padding: 5%;
+}
+.width__50__p__2half {
+  width: 45%;
+  padding: 2.5%;
+}
+.button__primary {
+  background: black;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  border: 1px solid black;
+}
+.button__primary:hover {
+  background: rgb(29, 29, 29);
+  color: white;
+}
+.button__secondry {
+  background: white;
+  border: none;
+  border: 1px solid black;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.button__secondry:hover {
+  background: rgb(245, 245, 245);
+}
+.transition_3s {
+  transition: all 0.3s ease;
 }

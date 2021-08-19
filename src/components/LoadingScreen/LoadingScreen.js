@@ -1,6 +1,6 @@
 import React from 'react'
 import './LoadingScreen.css'
-import BrandLogo from '../images/logo.png';
+import BrandLogo from '../../images/logo1.png';
 
 function LoadingScreen() {
     return (

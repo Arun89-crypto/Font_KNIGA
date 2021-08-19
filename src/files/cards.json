@@ -2,101 +2,145 @@
     {
         "id": 1,
         "background": "#E63946",
-        "color": "#FDFFFC"
+        "color": "#FDFFFC",
+        "type": "flat"
     },
     {
         "id": 2,
         "background": "#011627",
-        "color": "#2EC4B6"
+        "color": "#2EC4B6",
+        "type": "flat"
     },
     {
         "id": 3,
         "background": "#2EC4B6",
-        "color": "#E63946"
+        "color": "#E63946",
+        "type": "flat"
     },
     {
         "id": 4,
         "background": "#264653",
-        "color": "#2a9d8f"
+        "color": "#2a9d8f",
+        "type": "flat"
+    },
+    {
+        "id": 22,
+        "background": "linear-gradient(to right, #000428, #004e92)",
+        "color": "#ffffff",
+        "type": "gradient"
     },
     {
         "id": 5,
         "background": "#03045e",
-        "color": "#90e0ef"
+        "color": "#90e0ef",
+        "type": "flat"
     },
     {
         "id": 6,
         "background": "#ee6c4d",
-        "color": "#293241"
+        "color": "#293241",
+        "type": "flat"
     },
     {
         "id": 7,
         "background": "#283618",
-        "color": "#fefae0"
+        "color": "#fefae0",
+        "type": "flat"
     },
     {
         "id": 8,
         "background": "#fed9b7",
-        "color": "#f07167"
+        "color": "#f07167",
+        "type": "flat"
     },
     {
         "id": 9,
         "background": "#081c15",
-        "color": "#b7e4c7"
+        "color": "#b7e4c7",
+        "type": "flat"
+    },
+    {
+        "id": 23,
+        "background": "linear-gradient(to right, #cb2d3e, #ef473a)",
+        "color": "#ffffff",
+        "type": "gradient"
     },
     {
         "id": 10,
         "background": "#78290f",
-        "color": "#ffecd1"
+        "color": "#ffecd1",
+        "type": "flat"
     },
     {
         "id": 11,
         "background": "#252422",
-        "color": "#eb5e28"
+        "color": "#eb5e28",
+        "type": "flat"
     },
     {
         "id": 12,
         "background": "#ff6b6b",
-        "color": "#4ecdc4"
+        "color": "#4ecdc4",
+        "type": "flat"
     },
     {
         "id": 13,
         "background": "#05668d",
-        "color": "#02c39a"
+        "color": "#02c39a",
+        "type": "flat"
     },
     {
         "id": 14,
         "background": "#183a37",
-        "color": "#efd6ac"
+        "color": "#efd6ac",
+        "type": "flat"
     },
     {
         "id": 15,
         "background": "#3a0ca3",
-        "color": "#05f2d2"
+        "color": "#05f2d2",
+        "type": "flat"
     },
     {
         "id": 16,
         "background": "#333533",
-        "color": "#f5cb5c"
+        "color": "#f5cb5c",
+        "type": "flat"
     },
     {
         "id": 17,
         "background": "#50514f",
-        "color": "#70c1b3"
+        "color": "#70c1b3",
+        "type": "flat"
     },
     {
         "id": 18,
         "background": "#26547c",
-        "color": "#ffd166"
+        "color": "#ffd166",
+        "type": "flat"
     },
     {
         "id": 19,
         "background": "#ffd100",
-        "color": "#333533"
+        "color": "#333533",
+        "type": "flat"
     },
     {
         "id": 20,
+        "background": "linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%)",
+        "color": "#ffffff",
+        "type": "gradient"
+    },
+    {
+        "id": 21,
         "background": "#420039",
-        "color": "#ffffff"
+        "color": "#ffffff",
+        "type": "flat"
+    },
+    {
+        "id": 24,
+        "background": "linear-gradient(to right, #000000, #434343)",
+        "color": "#ffffff",
+        "type": "gradient"
     }
 ]

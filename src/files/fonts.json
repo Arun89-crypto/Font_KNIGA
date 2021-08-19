@@ -1,78 +1,95 @@
 [
     {
         "id": 1,
-        "name": "Verdana"
+        "name": "Verdana",
+        "font_family": "Verdana"
     },
     {
         "id": 2,
-        "name": "Arial"
+        "name": "Arial",
+        "font_family": "Arial"
     },
     {
         "id": 3,
-        "name": "Arial Black"
+        "name": "Arial Black",
+        "font_family": "Arial Black"
     },
     {
         "id": 4,
-        "name": "Helvetica"
+        "name": "Helvetica",
+        "font_family": "Helvetica"
     },
     {
         "id": 5,
-        "name": "Century Gothic"
+        "name": "Century Gothic",
+        "font_family": "Century Gothic"
     },
     {
         "id": 6,
-        "name": "Courier"
+        "name": "Courier",
+        "font_family": "Courier"
     },
     {
         "id": 7,
-        "name": "Copperplate Gothic"
+        "name": "Copperplate Gothic",
+        "font_family": "Copperplate Gothic"
     },
     {
         "id": 8,
-        "name": "Gill Sans"
+        "name": "Gill Sans",
+        "font_family": "Gill Sans"
     },
     {
         "id": 9,
-        "name": "Brush Script MT"
+        "name": "Poppins",
+        "font_family": "'Poppins', sans-serif",
+        "import": "@import url('https: //fonts.googleapis.com/css2?family=Poppins&display=swap');"
     },
     {
         "id": 10,
-        "name": "Impact"
+        "name": "Brush Script MT",
+        "font_family": "Brush Script MT"
     },
     {
         "id": 11,
-        "name": "Didot"
+        "name": "Roboto",
+        "font_family": "'Roboto', sans-serif",
+        "import": "@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');"
     },
     {
         "id": 12,
-        "name": "Andalé Mono,monospace"
+        "name": "Palette Mosaic",
+        "font_family": "'Palette Mosaic', cursive",
+        "import": "@import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap');"
     },
     {
         "id": 13,
-        "name": "Bradley Hand "
+        "name": "Style Script",
+        "font_family": "'Style Script', cursive",
+        "import": "@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');"
     },
     {
         "id": 14,
-        "name": "Luminari"
+        "name": "Oswald",
+        "font_family": "'Oswald', sans-serif",
+        "import": "@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');"
     },
     {
         "id": 15,
-        "name": "Comic Sans MS"
+        "name": "Roboto Mono",
+        "font_family": "'Roboto Mono', monospace",
+        "import": "@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');"
     },
     {
         "id": 16,
-        "name": "Futura"
+        "name": "Ubuntu",
+        "font_family": "'Ubuntu', sans-serif",
+        "import": "@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');"
     },
     {
         "id": 17,
-        "name": "Rockwell"
-    },
-    {
-        "id": 18,
-        "name": "Titillium Web, sans-serif"
-    },
-    {
-        "id": 19,
-        "name": "B612, sans-serif"
+        "name": "WindSong",
+        "font_family": "'WindSong', cursive",
+        "import": "@import url('https://fonts.googleapis.com/css2?family=WindSong&display=swap');"
     }
 ]
