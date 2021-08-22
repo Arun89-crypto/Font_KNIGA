@@ -9,7 +9,7 @@ function Card({ color, text, size, bold, family, fontId }) {
     const [details, setDetails] = useState(false);
     return (
         <div className="card flex__center" style={{ color: `${color.color}`, background: `${color.background}` }}>
-            {/* <p>{color.id}/{fontId}</p> */}
+            <p>{color.id}/{fontId}</p>
             <p style={
                 {
                     fontSize: `${size}px`,
@@ -148,7 +148,7 @@ ${Tag(tag)}{
     color : ${ftcolor}; 
     font-size : ${size}px;
     font-family : ${Fonts.font_family};
-    ${(bold) ? `font-weight:'bold'` : ''}
+    ${(bold) ? `font-weight:'bold';` : ''}
 }`}
                                 showLineNumbers={true}
                                 theme={googlecode}

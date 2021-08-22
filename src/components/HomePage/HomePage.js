@@ -31,11 +31,11 @@ function HomePage() {
                         <h1>Font<span>Kniga</span></h1>
                         <h2>A Complete Font Library</h2>
                         <div className='flex__center'>
-                            <Link>
-                                <button className='button__primary'>Custom</button>
+                            <Link to='/custom'>
+                                <button className='button__primary transition_3s'>Custom</button>
                             </Link>
                             <Link to='/exp'>
-                                <button className='button__secondry'>Explore</button>
+                                <button className='button__secondry transition_3s'>Explore</button>
                             </Link>
                         </div>
                     </div>

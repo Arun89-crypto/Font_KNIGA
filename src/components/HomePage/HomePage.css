@@ -24,12 +24,12 @@
   margin-right: 10px;
 }
 .left__main__home__div > h1 {
-  font-size: 5rem;
+  font-size: 6rem;
   font-weight: bold;
 }
 .left__main__home__div > h2 {
   background: -webkit-linear-gradient(#ef476f, #073b4c);
-  font-size: 4rem;
+  font-size: 3rem;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -57,7 +57,6 @@
   -webkit-text-fill-color: transparent;
 }
 .section p {
-  font-weight: bold;
   margin-top: 10%;
   font-size: 18px;
   color: white;

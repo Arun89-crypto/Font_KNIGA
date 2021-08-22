@@ -62,7 +62,7 @@ nav button {
 /* EXPLORE PAGE */
 .card__section__main {
   display: grid;
-  grid-template-columns: repeat(4, 0fr);
+  grid-template-columns: repeat(3, 0fr);
   gap: 10px;
 }
 .dropdown {
