@@ -11,8 +11,8 @@
   color: white;
 }
 .fonts__section {
-  display: grid;
-  grid-template-columns: repeat(6, 0fr);
+  display: flex;
+  flex-wrap: wrap;
   position: relative;
   gap: 20px;
   margin-top: 5%;
@@ -95,4 +95,9 @@ nav button {
 }
 .dropdown:hover .dropdown-content {
   display: block;
+}
+@media only screen and (max-width: 865px) {
+  .card__section__main {
+    grid-template-columns: repeat(2, 0fr);
+  }
 }

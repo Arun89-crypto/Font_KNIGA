@@ -35,7 +35,7 @@
   top: 0px;
   left: 0px;
   background: rgba(0, 0, 0, 0.3);
-  z-index: 3;
+  z-index: 1000;
 }
 #close__btn__details {
   position: absolute;
@@ -57,6 +57,38 @@
   border: none;
   cursor: pointer;
 }
+.pop__up {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 20;
+}
+.pop__up__main {
+  background: #fff;
+  width: 500px;
+  height: 350px;
+  padding: 20px;
+  position: relative;
+}
+.save__popup {
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 20px;
+  border: 2px solid #06d6a0;
+  transform: translateY(120%);
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+.save__popup__up {
+  transform: translateY(0%);
+}
+
 .tagbuttons button:hover {
   background: black;
   color: white;

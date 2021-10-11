@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './ExplorePage.css';
 import Card from './Card/Card';
-
+import GoToTop from '../Gototop';
 //importing jsons
 import Fonts from '../../files/fonts.json';
 import Colors from '../../files/cards.json';
@@ -25,9 +25,10 @@ function ExplorePage() {
     return (
         <>
             <div>
-                <Navbar setSection={setSection} setBold={setBold} bold={bold} setCardType={setCardType} />
+                <Navbar setSection={setSection} setBold={setBold} bold={bold} setCardType={setCardType} cardType={cardType} />
                 <HeaderSection size={size} setSize={setSize} text={text} setText={setText} />
                 <CardsSection text={text} size={size} bold={bold} family={family} fontId={fontId} cardType={cardType} />
+                <GoToTop />
             </div>
             {
                 (section) ? (
@@ -112,13 +113,13 @@ const FontsSection = ({ setSection, setFamily, setFontId }) => {
         </div>
     )
 }
-const Navbar = ({ setSection, setBold, bold, setCardType }) => {
+const Navbar = ({ setSection, setBold, bold, setCardType, cardType }) => {
     return (
         <nav className='width__full__pad_1 flex__around'>
             <div className='flex__center nav__link'>
-                <p onClick={() => setCardType(0)}>All</p>
-                <p onClick={() => setCardType(1)}>Flat Colors</p>
-                <p onClick={() => setCardType(2)}>Gradient</p>
+                <p onClick={() => setCardType(0)} style={{ fontWeight: `${(cardType === 0) ? 'bold' : 'normal'}`, color: `${(cardType === 0) ? '#ef476f' : '#000'}` }}>All</p>
+                <p onClick={() => setCardType(1)} style={{ fontWeight: `${(cardType === 1) ? 'bold' : 'normal'}`, color: `${(cardType === 1) ? '#ef476f' : '#000'}` }}>Flat Colors</p>
+                <p onClick={() => setCardType(2)} style={{ fontWeight: `${(cardType === 2) ? 'bold' : 'normal'}`, color: `${(cardType === 2) ? '#ef476f' : '#000'}` }}>Gradient</p>
             </div>
             <div className='flex__center'>
                 <button className='flex__around button__secondry' onClick={() => setSection(true)}>
@@ -147,7 +148,7 @@ const HeaderSection = ({ size, setSize, text, setText }) => {
                 <button className='button__secondry' onClick={() => setSize(size - 1)}>
                     <img src={Minus} alt='plus' width='10px' ></img>
                 </button>
-                <p style={{ fontSize: '20px', margin: '10px' }}>{size}</p>
+                <input style={{ fontSize: '20px', margin: '10px', padding: '10px', width: '50px' }} value={size} onChange={(e) => setSize(e.target.value)} type='number'></input>
                 <button className='button__secondry' onClick={() => setSize(size + 1)}>
                     <img src={Plus} alt='plus' width='10px' ></img>
                 </button>

@@ -1,0 +1,67 @@
+.saved__card {
+  height: 400px;
+  width: 300px;
+  padding: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+.details__saved__cards {
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(35, 35, 35, 0.4);
+}
+.delete__popup {
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 20px;
+  border: 2px solid #ff002b;
+  transform: translateY(120%);
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+.delete__popup__up {
+  transform: translateY(0%);
+}
+.code__block {
+  width: 800px;
+  height: 600px;
+  border-radius: 20px;
+  background: rgb(39, 42, 54);
+  position: relative;
+}
+#delete__button {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: fit-content;
+  width: 60px;
+  height: 60px;
+  background: none;
+  border: none;
+  transition: all 0.3s ease;
+}
+#delete__button:hover::before {
+  display: inline;
+}
+#delete__button::before {
+  content: "Delete";
+  position: absolute;
+  left: 50px;
+  color: red;
+  display: none;
+}
+#delete__button > svg {
+  fill: #fff;
+  transition: all 0.3s ease;
+}
+#delete__button > svg:hover {
+  fill: red;
+}

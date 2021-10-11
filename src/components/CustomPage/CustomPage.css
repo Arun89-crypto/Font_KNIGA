@@ -110,3 +110,24 @@
   cursor: pointer;
   transition: all 0.5s ease;
 }
+.star__button {
+  border: none;
+  background: none;
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  width: fit-content;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.star__button:hover .attachment {
+  display: flex;
+}
+.attachment {
+  display: none;
+  padding: 5px;
+  background: #fff;
+  transition: all 0.3s ease;
+  margin-right: 5px;
+  border-radius: 5px;
+}

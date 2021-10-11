@@ -59,12 +59,12 @@
 .button__primary {
   background: black;
   border: none;
-  /* border-radius: 5px; */
   padding: 12px 20px;
   color: white;
   font-size: 15px;
   cursor: pointer;
   border: 1px solid black;
+  border-radius: 10px;
 }
 .button__primary:hover {
   background: rgb(29, 29, 29);
@@ -75,9 +75,9 @@
   border: none;
   border: 1px solid black;
   padding: 12px 20px;
-  /* border-radius: 5px; */
   font-size: 15px;
   cursor: pointer;
+  border-radius: 10px;
 }
 .button__secondry:hover {
   background: rgb(245, 245, 245);

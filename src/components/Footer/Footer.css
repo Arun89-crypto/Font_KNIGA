@@ -1,7 +1,7 @@
 .footer__link {
-  color: white;
+  color: #000;
   text-decoration: none;
-  padding: 10px;
+  padding: 5px;
   border-bottom: 2px solid white;
 }
 .footer__link:hover {
@@ -9,9 +9,15 @@
   color: #ef476f;
 }
 .footer__left p {
-  background: -webkit-linear-gradient(#ef476f, #000);
+  background: -webkit-linear-gradient(#ef476f, rgb(35, 35, 35));
   font-size: 1rem;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+}
+@media only screen and (max-width: 865px) {
+  .footer {
+    flex-direction: column;
+    width: 90%;
+  }
 }

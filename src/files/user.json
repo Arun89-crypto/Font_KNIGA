@@ -1,0 +1,47 @@
+[
+    {
+        "user_id": "283728CVF3DDF",
+        "name": "Arun Jangra",
+        "cards_saved": [
+            {
+                "card_id": 1,
+                "color": {
+                    "color": "#fff",
+                    "background": "#000"
+                },
+                "size": 30,
+                "bold": true,
+                "family": "Arial Black",
+                "fontId": 2,
+                "text": "Hello World",
+                "userCard": true
+            },
+            {
+                "card_id": 2,
+                "color": {
+                    "color": "#efd6ac",
+                    "background": "#183a37"
+                },
+                "size": 24,
+                "bold": false,
+                "family": "'Palette Mosaic', cursive",
+                "fontId": 12,
+                "text": "Hello",
+                "userCard": true
+            },
+            {
+                "card_id": 3,
+                "color": {
+                    "color": "#e63946",
+                    "background": "#f1faee"
+                },
+                "size": 30,
+                "bold": false,
+                "family": "'Palette Mosaic', cursive",
+                "fontId": 12,
+                "text": "Hello",
+                "userCard": true
+            }
+        ]
+    }
+]

@@ -11,7 +11,7 @@
 }
 /* HOMEPAGE CSS */
 .right__main__home__div img {
-  width: 90%;
+  width: 80%;
 }
 .left__main__home__div {
   align-items: flex-start;
@@ -26,6 +26,7 @@
 .left__main__home__div > h1 {
   font-size: 6rem;
   font-weight: bold;
+  line-height: 110%;
 }
 .left__main__home__div > h2 {
   background: -webkit-linear-gradient(#ef476f, #073b4c);
@@ -38,27 +39,166 @@
   -webkit-text-fill-color: transparent;
 }
 .homepage__master {
-  background: url("../../images/cool-background.svg") center no-repeat;
+  background: #fff center no-repeat;
   background-size: cover;
   background-attachment: fixed;
   min-height: 100vh;
 }
 /* SECTION CSS */
 .section {
-  background: black;
+  background: rgb(35, 35, 35) center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
 }
 .section img {
-  width: 60%;
+  width: 80%;
 }
-.section h1 {
-  background: -webkit-linear-gradient(#000000, #06d6a0);
-  font-size: 4rem;
+.question {
+  padding-top: 10%;
+}
+.question > h1 {
+  color: #fff;
+  font-size: 3.5rem;
+}
+.question > h1 > span {
+  background: -webkit-linear-gradient(#06d6a0, #073b4c);
+  font-size: 5rem;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.languages {
+  width: 100%;
+  justify-content: space-around;
+  padding-bottom: 10%;
+}
+.languages > img {
+  width: 40%;
+}
+.languages > h1 {
+  font-size: 3rem;
+  line-height: 125%;
+  width: 40%;
+  color: #fff;
+}
+.languages > h1 > span {
+  background: -webkit-linear-gradient(#073b4c, #06d6a0);
+  font-size: 3rem;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.cards__heading {
+  -webkit-text-stroke: 1px #fff !important;
+  -webkit-text-fill-color: transparent;
+  font-size: 3rem !important;
+  margin-top: 50px;
 }
 .section p {
   margin-top: 10%;
   font-size: 18px;
   color: white;
   text-align: justify;
+}
+.info__card {
+  width: 300px;
+  height: 200px;
+  background: rgb(25, 25, 25);
+  padding: 20px;
+  justify-content: space-around;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  margin: 20px;
+}
+.brand__logo {
+  width: 100px !important;
+  filter: grayscale(1);
+}
+.info__card p {
+  text-align: center;
+  font-size: 13px;
+}
+.info__card a {
+  color: rgb(182, 182, 182);
+  font-size: 12px;
+}
+.info__card:hover {
+  background: #fff;
+  color: rgb(35, 35, 35);
+}
+.info__card:hover .brand__logo {
+  filter: grayscale(0);
+}
+.info__card:hover .brand__info {
+  color: rgb(35, 35, 35);
+}
+.wave {
+  min-width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.wave__up {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media only screen and (max-width: 1200px) {
+  .left__main__home__div > h1 {
+    font-size: 3.5rem;
+  }
+  .info__section__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    align-items: center;
+    justify-content: center;
+  }
+  .languages > h1 {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 865px) {
+  .languages > h1 {
+    font-size: 2rem;
+  }
+  .right__main__home__div {
+    display: none;
+    min-height: 100vh !important;
+  }
+  .info__section__cards {
+    grid-template-columns: repeat(1, 0fr);
+  }
+  .left__main__home__div {
+    width: 100%;
+  }
+  .home__div__main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+  }
+  .cards__heading {
+    font-size: 1rem;
+  }
+  .question {
+    width: 100%;
+  }
+  .question > h1 {
+    font-size: 2rem;
+  }
+  .question > h1 > span {
+    font-size: 3.5rem;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .languages {
+    flex-direction: column;
+  }
+  .languages > h1 {
+    width: 100% !important;
+    text-align: center;
+    margin-bottom: 10%;
+  }
+  .languages > img {
+    display: none;
+  }
 }
