@@ -12,6 +12,9 @@ import db, { auth, provider } from '../../Firebase';
 import { useStateValue } from '../StateProvider';
 import { actionTypes } from '../reducer';
 import GoToTop from '../Gototop';
+import Underline from "../../images/underline.svg"
+import Group1 from '../../images/Group1.png';
+import Group2 from '../../images/Group2.png';
 
 
 function HomePage() {
@@ -30,7 +33,6 @@ function HomePage() {
     const databaseFunction = () => {
         db.collection('USERS_KNIGA').doc(user.email).get().then((docSnapshot) => {
             if (!docSnapshot.exists) {
-                console.log('no documents in collection');
                 db.collection("USERS_KNIGA").doc(user.email).set({
                     name: user.displayName,
                     email: user.email,
@@ -42,7 +44,6 @@ function HomePage() {
     const [id, setId] = useState('');
     useEffect(() => {
         if (user) {
-            console.log(user.Aa);
             setId(user.Aa);
             databaseFunction();
         }
@@ -78,6 +79,7 @@ function HomePage() {
                 <div className="home__div__main flex__around">
                     <div className="left__main__home__div width__50__p__2half">
                         <h1>A complete font<span> Library</span></h1>
+
                         <div className='flex__center'>
                             <Link to='/custom'>
                                 <button className='button__primary transition_3s'>Custom</button>
@@ -101,11 +103,22 @@ function HomePage() {
 const SectionInfo = () => {
     return (
         <div className="flex__center__vert width__full__pad_2half section">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className='wave wave__up' ><path fill="#fff" fill-opacity="1" d="M0,224L60,208C120,192,240,160,360,128C480,96,600,64,720,69.3C840,75,960,117,1080,117.3C1200,117,1320,75,1380,53.3L1440,32L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
-            <div className='width__50__p__2half flex__center__vert question'>
-                <h1>Why <span>FontKniga</span> ?</h1>
-                <p style={{ textAlign: 'center' }}>Here you can find the best fonts and best color combinations precisely matched <br></br>If you want to create your own you can create your own highly customizable theme within seconds.. </p>
-                <p style={{ textAlign: 'center' }}></p>
+            <div className=' flex__center__vert question'>
+                <h1 id="question__heading">Why <span>FontKniga</span> ?</h1>
+                <img src={Underline} alt="und" style={{ width: "500px" }} id="underline"></img>
+                <br></br>
+                <div className="question__div">
+                    <img src={Group1} alt="grp1"></img>
+                    <div className="flex__center">
+                        <p className="feature__para">Here you can find the best fonts and best color combinations precisely matched and select from the wide range of cards and save them in your account</p>
+                    </div>
+                </div>
+                <div className="question__div flex__reverse">
+                    <img src={Group2} alt="grp2"></img>
+                    <div className="flex__center">
+                        <p className="feature__para">If you want to create your own you can create your own highly customizable theme within seconds and save that for further use...</p>
+                    </div>
+                </div>
             </div>
             <h1 className='cards__heading'>Thanks for making this possible.</h1>
             <div className='info__section__cards flex__center'>
@@ -132,7 +145,6 @@ const SectionInfo = () => {
                 </h1>
                 <img src={IMG2} alt='image2'></img>
             </div>
-            <svg xmlns="http://www.w3.org/2000/svg" className='wave' viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,160L60,144C120,128,240,96,360,96C480,96,600,128,720,160C840,192,960,224,1080,213.3C1200,203,1320,149,1380,122.7L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
         </div>
     )
 }

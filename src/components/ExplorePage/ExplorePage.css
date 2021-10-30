@@ -16,6 +16,9 @@
   position: relative;
   gap: 20px;
   margin-top: 5%;
+  max-height: 60vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 .font__section__master {
   background: white;

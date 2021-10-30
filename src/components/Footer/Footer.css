@@ -9,7 +9,7 @@
   color: #ef476f;
 }
 .footer__left p {
-  background: -webkit-linear-gradient(#ef476f, rgb(35, 35, 35));
+  background: -webkit-linear-gradient(#06d6a0, rgb(35, 35, 35));
   font-size: 1rem;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -19,5 +19,22 @@
   .footer {
     flex-direction: column;
     width: 90%;
+  }
+  .footer__left {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .footer__left p {
+    font-size: 0.7rem;
+    text-align: center;
+  }
+  .footer__left > h3 {
+    text-align: center;
+  }
+  .footer__links {
+    display: none;
   }
 }

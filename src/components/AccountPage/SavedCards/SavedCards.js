@@ -43,7 +43,6 @@ function SavedCards({ color, text, size, bold, family, font_id, cardId, hash, se
 
 const SavedCardDetails = ({ color, ftcolor, size, bold, fontId, showDetails }) => {
     const FontData = Fonts[parseInt(fontId)];
-    console.log(FontData);
     return (
         <div className='details__saved__cards flex__center'>
             <div className='code__block flex__center'>

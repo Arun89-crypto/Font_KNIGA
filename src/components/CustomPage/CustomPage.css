@@ -93,6 +93,7 @@
   height: 700px;
   background: white;
   position: relative;
+  border-radius: 10px;
 }
 .close__btn__code {
   position: absolute;

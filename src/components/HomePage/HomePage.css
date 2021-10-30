@@ -46,26 +46,28 @@
 }
 /* SECTION CSS */
 .section {
-  background: rgb(35, 35, 35) center no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  position: relative;
+  background: rgb(35, 35, 35);
 }
-.section img {
-  width: 80%;
-}
-.question {
-  padding-top: 10%;
-}
-.question > h1 {
+#question__heading {
   color: #fff;
   font-size: 3.5rem;
 }
-.question > h1 > span {
+#question__heading > span {
   background: -webkit-linear-gradient(#06d6a0, #073b4c);
   font-size: 5rem;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.question > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.question > div > img,
+.question > div > div {
+  width: 45%;
+  padding: 2.5%;
 }
 .languages {
   width: 100%;
@@ -131,74 +133,92 @@
 .info__card:hover .brand__info {
   color: rgb(35, 35, 35);
 }
-.wave {
-  min-width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-.wave__up {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-@media only screen and (max-width: 1200px) {
-  .left__main__home__div > h1 {
-    font-size: 3.5rem;
-  }
+@media only screen and (max-width: 1146px) {
   .info__section__cards {
     display: grid;
     grid-template-columns: repeat(2, 0fr);
-    align-items: center;
-    justify-content: center;
   }
-  .languages > h1 {
-    font-size: 2.5rem;
+  .left__main__home__div > h1 {
+    font-size: 3rem;
   }
-}
-@media only screen and (max-width: 865px) {
   .languages > h1 {
     font-size: 2rem;
+    line-height: normal;
   }
+  #question__heading {
+    font-size: 2rem;
+  }
+  #question__heading > span {
+    font-size: 3.5rem;
+  }
+  #underline {
+    width: 300px !important;
+  }
+  .home__div__main {
+    height: 100vh;
+  }
+}
+@media only screen and (max-width: 768px) {
   .right__main__home__div {
     display: none;
-    min-height: 100vh !important;
-  }
-  .info__section__cards {
-    grid-template-columns: repeat(1, 0fr);
   }
   .left__main__home__div {
     width: 100%;
   }
-  .home__div__main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 80vh;
+  .left__main__home__div > h1 {
+    font-size: 5rem;
   }
-  .cards__heading {
-    font-size: 1rem;
-  }
-  .question {
-    width: 100%;
-  }
-  .question > h1 {
-    font-size: 2rem;
-  }
-  .question > h1 > span {
-    font-size: 3.5rem;
-  }
-}
-@media only screen and (max-width: 1050px) {
-  .languages {
+  .question__div {
     flex-direction: column;
   }
-  .languages > h1 {
-    width: 100% !important;
-    text-align: center;
-    margin-bottom: 10%;
+  .question > div > img,
+  .question > div > div {
+    width: 95%;
+    padding: 2.5%;
+  }
+  .question > div > img {
+    width: 70%;
   }
   .languages > img {
     display: none;
+  }
+  .languages > h1 {
+    width: 100%;
+    text-align: center;
+  }
+  .info__section__cards {
+    display: grid;
+    grid-template-columns: repeat(1, 0fr);
+  }
+  .cards__heading {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 416px) {
+  .left__main__home__div > h1 {
+    font-size: 4rem;
+  }
+  .question > div > img {
+    width: 90%;
+  }
+  #question__heading {
+    font-size: 2rem;
+  }
+  #question__heading > span {
+    font-size: 3rem;
+  }
+  #underline {
+    width: 300px !important;
+  }
+  .left__nav__div > img {
+    width: 80px;
+  }
+  .info__card {
+    margin: 5px;
+  }
+  .cards__heading {
+    font-size: 2rem !important;
+    margin-bottom: 10px;
   }
 }

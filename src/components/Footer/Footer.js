@@ -16,8 +16,9 @@ function Footer() {
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse molestie laoreet risus non vehicula. Pellentesque eget nibh massa. Morbi non vulputate lorem, in sollicitudin velit.</p>
                     <br></br>
                     <h3>Made with ☕ by ar_8creax9</h3>
+
                 </div>
-                <div className='width__50__p__2half flex__center__vert' style={{ alignItems: 'flex-end' }}>
+                <div className='width__50__p__2half flex__center__vert footer__links' style={{ alignItems: 'flex-end' }}>
                     <Link className="footer__link transition_3s" to='/exp'>
                         <p>Explore</p>
                     </Link>

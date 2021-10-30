@@ -45,18 +45,11 @@
   width: 60px;
   height: 60px;
   background: none;
-  border: none;
+  border: 1px dotted red;
   transition: all 0.3s ease;
 }
 #delete__button:hover::before {
   display: inline;
-}
-#delete__button::before {
-  content: "Delete";
-  position: absolute;
-  left: 50px;
-  color: red;
-  display: none;
 }
 #delete__button > svg {
   fill: #fff;

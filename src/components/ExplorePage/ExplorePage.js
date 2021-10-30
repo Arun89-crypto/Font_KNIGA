@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './ExplorePage.css';
 import Card from './Card/Card';
 import GoToTop from '../Gototop';
@@ -12,8 +12,8 @@ import Bold from '../../images/bold.png';
 import Close from '../../images/close.png';
 import Plus from '../../images/plus.png';
 import Minus from '../../images/minus.png';
+import Lady from '../../images/lady.png';
 
-// console.log(Fonts);
 function ExplorePage() {
     const [section, setSection] = useState(false);
     const [text, setText] = useState('Hello World');
@@ -22,18 +22,41 @@ function ExplorePage() {
     const [family, setFamily] = useState('Arial');
     const [fontId, setFontId] = useState(2);
     const [cardType, setCardType] = useState(0);
+    const [screen, setScreen] = useState(false);
+
+    const calcScreen = () => {
+        if (window.innerWidth < 760) {
+            setScreen(true);
+        } else {
+            setScreen(false);
+        }
+    }
+
+    useEffect(() => {
+        calcScreen();
+    }, [])
+
     return (
         <>
-            <div>
-                <Navbar setSection={setSection} setBold={setBold} bold={bold} setCardType={setCardType} cardType={cardType} />
-                <HeaderSection size={size} setSize={setSize} text={text} setText={setText} />
-                <CardsSection text={text} size={size} bold={bold} family={family} fontId={fontId} cardType={cardType} />
-                <GoToTop />
-            </div>
             {
-                (section) ? (
-                    <FontsSection setSection={setSection} setFamily={setFamily} setFontId={setFontId} />
-                ) : ''
+                (!screen) ? (
+                    <div>
+                        <Navbar setSection={setSection} setBold={setBold} bold={bold} setCardType={setCardType} cardType={cardType} />
+                        <HeaderSection size={size} setSize={setSize} text={text} setText={setText} />
+                        <CardsSection text={text} size={size} bold={bold} family={family} fontId={fontId} cardType={cardType} />
+                        <GoToTop />
+                        {
+                            (section) ? (
+                                <FontsSection setSection={setSection} setFamily={setFamily} setFontId={setFontId} />
+                            ) : ''
+                        }
+                    </div>
+                ) : (
+                    <div className="screen flex__center__vert">
+                        <img src={Lady} alt="lady" style={{ width: "100%" }}></img>
+                        <h2>Please use Desktop for better experience</h2>
+                    </div>
+                )
             }
         </>
     )
@@ -65,7 +88,6 @@ const FontsSection = ({ setSection, setFamily, setFontId }) => {
                                         <div className='font__card transition_3s' onClick={() => {
                                             setFamily(font.font_family);
                                             setFontId(font.id);
-                                            console.log(font.id);
                                             setSection(false);
                                         }}>
                                             <p style={{ fontFamily: `${font.font_family}` }} > {font.name}</p>
@@ -83,7 +105,6 @@ const FontsSection = ({ setSection, setFamily, setFontId }) => {
                                     <div className='font__card transition_3s' onClick={() => {
                                         setFamily(font.font_family);
                                         setFontId(font.id);
-                                        console.log(font.id);
                                         setSection(false);
                                     }}>
                                         <p style={{ fontFamily: `${font.font_family}` }} > {font.name}</p>
@@ -101,7 +122,6 @@ const FontsSection = ({ setSection, setFamily, setFontId }) => {
                             <div className='font__card transition_3s' onClick={() => {
                                 setFamily(font.font_family);
                                 setFontId(font.id);
-                                console.log(font.id);
                             }}>
                                 <p style={{ fontFamily: `${font.font_family}` }} > {font.name}</p>
                             </div>
@@ -132,7 +152,7 @@ const Navbar = ({ setSection, setBold, bold, setCardType, cardType }) => {
                         (bold) ? (
                             <p style={{ color: '#118ab2', marginLeft: '10px' }}>On</p>
                         ) : (
-                            <p style={{ color: '#118ab2', marginLeft: '10px' }}>Off</p>
+                            <p style={{ color: 'red', marginLeft: '10px' }}>Off</p>
                         )
                     }
                 </button>
@@ -148,7 +168,7 @@ const HeaderSection = ({ size, setSize, text, setText }) => {
                 <button className='button__secondry' onClick={() => setSize(size - 1)}>
                     <img src={Minus} alt='plus' width='10px' ></img>
                 </button>
-                <input style={{ fontSize: '20px', margin: '10px', padding: '10px', width: '50px' }} value={size} onChange={(e) => setSize(e.target.value)} type='number'></input>
+                <input style={{ fontSize: '20px', margin: '10px', padding: '10px', width: '50px' }} value={size} onChange={(e) => setSize(e.target.value)} type='number' min="1" max="100"></input>
                 <button className='button__secondry' onClick={() => setSize(size + 1)}>
                     <img src={Plus} alt='plus' width='10px' ></img>
                 </button>

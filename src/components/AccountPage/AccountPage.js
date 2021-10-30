@@ -33,13 +33,10 @@ function AccountPage() {
             snapshot.forEach((doc) => {
                 if (doc.data().email === user.email) {
                     Items.push(doc.data().saved_cards);
-                    console.log("yes");
                     setLoading(false);
-                    // console.log(Items[0]);
                 }
             })
             setSavedCards(Items[0]);
-            console.log(savedCards);
         })
     }
     useEffect(() => {
@@ -63,9 +60,7 @@ function AccountPage() {
                     (loading) ? (<p>Loading....</p>) : (
                         (savedCards.length !== 0) ? (
                             savedCards.map((card) => {
-                                // console.log(card);
                                 const arr = card.split('|');
-                                console.log(arr);
                                 const colorObj = {
                                     color: arr[1],
                                     background: arr[2]
