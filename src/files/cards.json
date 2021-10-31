@@ -154,5 +154,17 @@
         "background": "linear-gradient(to right, #000000, #434343)",
         "color": "#e63946",
         "type": "gradient"
+    },
+    {
+        "id": 27,
+        "background": "#001219",
+        "color": "#94d2bd",
+        "type": "flat"
+    },
+    {
+        "id": 27,
+        "background": "#c9ada7",
+        "color": "#22223b",
+        "type": "flat"
     }
 ]

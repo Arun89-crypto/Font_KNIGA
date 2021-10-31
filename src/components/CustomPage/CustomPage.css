@@ -1,5 +1,5 @@
 .custom__page__fonts {
-  background: #0a2342;
+  background: rgb(35, 35, 35);
   width: 20%;
   height: 95vh;
   color: white;
@@ -8,6 +8,14 @@
   flex-direction: column;
   justify-content: flex-start;
   overflow: scroll;
+  overflow-x: hidden;
+}
+.custom__page__fonts::-webkit-scrollbar {
+  width: 10px;
+}
+.custom__page__fonts::-webkit-scrollbar-thumb {
+  background: #fff;
+  border: 2px solid rgb(35, 35, 35);
 }
 .card__division {
   width: 40%;

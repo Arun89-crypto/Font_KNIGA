@@ -15,7 +15,7 @@ function Footer() {
                     <img src={BrandLogo} alt='logo' width='200px'></img>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse molestie laoreet risus non vehicula. Pellentesque eget nibh massa. Morbi non vulputate lorem, in sollicitudin velit.</p>
                     <br></br>
-                    <h3>Made with ☕ by ar_8creax9</h3>
+                    <h3>Made with ☕ by @ar_8creax9</h3>
 
                 </div>
                 <div className='width__50__p__2half flex__center__vert footer__links' style={{ alignItems: 'flex-end' }}>

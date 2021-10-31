@@ -15,9 +15,10 @@ import GoToTop from '../Gototop';
 import Underline from "../../images/underline.svg"
 import Group1 from '../../images/Group1.png';
 import Group2 from '../../images/Group2.png';
-
+import Loading from '../../images/loading.gif'
 
 function HomePage() {
+    const [loading, setLoading] = useState(true)
     //state provider
     const [{ user }, dispatch] = useStateValue();
     //sign in function
@@ -29,27 +30,38 @@ function HomePage() {
             });
         }).catch((error) => alert(error.message));
     }
-    //creating the database
-    const databaseFunction = () => {
-        db.collection('USERS_KNIGA').doc(user.email).get().then((docSnapshot) => {
-            if (!docSnapshot.exists) {
-                db.collection("USERS_KNIGA").doc(user.email).set({
-                    name: user.displayName,
-                    email: user.email,
-                    saved_cards: []
-                })
-            }
-        })
-    }
+
     const [id, setId] = useState('');
     useEffect(() => {
         if (user) {
             setId(user.Aa);
+            //creating the database
+            const databaseFunction = () => {
+                db.collection('USERS_KNIGA').doc(user.email).get().then((docSnapshot) => {
+                    if (!docSnapshot.exists) {
+                        db.collection("USERS_KNIGA").doc(user.email).set({
+                            name: user.displayName,
+                            email: user.email,
+                            saved_cards: []
+                        })
+                    }
+                })
+            }
             databaseFunction();
         }
+        setTimeout(() => {
+            setLoading(false)
+        }, 3000);
     }, [user])
     return (
         <>
+            {
+                (loading) ? <div className="loading flex__center">
+                    <div className="loading__main flex__center">
+                        <img src={Loading} alt="loading..."></img>
+                    </div>
+                </div> : ''
+            }
             <div className="homepage__master">
                 <nav className="flex__around width__full__pad_1">
                     <div className="left__nav__div flex__center">

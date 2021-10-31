@@ -13,6 +13,21 @@
 .saved__card__heading {
   padding: 2.5%;
 }
+.no__user {
+  width: 100vw;
+  height: 100vh;
+}
+.main__error__screen {
+  width: 95%;
+  padding: 2.5%;
+  max-width: 300px;
+}
+.main__error__screen > img {
+  width: 100%;
+}
+.main__error__screen > h2 {
+  text-align: center;
+}
 @media only screen and (max-width: 865px) {
   .cards__section {
     grid-template-columns: repeat(2, 0fr);

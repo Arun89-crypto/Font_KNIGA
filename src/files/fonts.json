@@ -91,5 +91,89 @@
         "name": "WindSong",
         "font_family": "'WindSong', cursive",
         "import": "@import url('https://fonts.googleapis.com/css2?family=WindSong&display=swap');"
+    },
+    {
+        "id": 18,
+        "name": "Open Sans",
+        "font_family": "'Open Sans', sans-serif",
+        "import": "@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');"
+    },
+    {
+        "id": 19,
+        "name": "Noto Sans",
+        "font_family": "'Noto Sans', sans-serif",
+        "import": "@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');"
+    },
+    {
+        "id": 20,
+        "name": "Zen Kurenaido",
+        "font_family": "'Zen Kurenaido', sans-serif",
+        "import": "@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');"
+    },
+    {
+        "id": 21,
+        "name": "Raleway",
+        "font_family": "'Raleway', sans-serif",
+        "import": "@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');"
+    },
+    {
+        "id": 22,
+        "name": "Rubik",
+        "font_family": "'Rubik', sans-serif",
+        "import": "@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');"
+    },
+    {
+        "id": 23,
+        "name": "Lora",
+        "font_family": "'Lora', serif",
+        "import": "@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');"
+    },
+    {
+        "id": 24,
+        "name": "Irish Grover",
+        "font_family": "'Irish Grover', cursive",
+        "import": "@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');"
+    },
+    {
+        "id": 25,
+        "name": "Quicksand",
+        "font_family": "'Quicksand', sans-serif",
+        "import": "@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');"
+    },
+    {
+        "id": 26,
+        "name": "Noto Serif Display",
+        "font_family": "'Noto Serif Display', serif",
+        "import": "@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display&display=swap');"
+    },
+    {
+        "id": 26,
+        "name": "Bebas Neue",
+        "font_family": "'Bebas Neue', cursive",
+        "import": "@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');"
+    },
+    {
+        "id": 27,
+        "name": "Teko",
+        "font_family": "'Teko', sans-serif",
+        "import": "@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');"
+    },
+    {
+        "id": 28,
+        "name": "Josefin Sans",
+        "font_family": "Josefin Sans",
+        "import": "@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');"
+    },
+    {
+        "id": 29,
+        "name": "Anton",
+        "font_family": "'Anton', sans-serif",
+        "import": "@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');"
+    },
+    {
+        "id": 30,
+        "name": "Dancing Script",
+        "font_family": "'Dancing Script', cursive",
+        "import": "@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');"
     }
 ]

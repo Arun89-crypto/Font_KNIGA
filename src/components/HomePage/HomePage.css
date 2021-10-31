@@ -42,11 +42,15 @@
   background: #fff center no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  min-height: 100vh;
+  min-height: 100vh !important;
 }
 /* SECTION CSS */
 .section {
-  background: rgb(35, 35, 35);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1001%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(35%2c 35%2c 35%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c550.679C106.42%2c539.639%2c216.848%2c535.242%2c305.209%2c474.915C392.419%2c415.374%2c431.34%2c312.644%2c483.297%2c220.714C540.385%2c119.705%2c633.35%2c25.907%2c624.356%2c-89.769C615.276%2c-206.548%2c515.32%2c-291.577%2c436.714%2c-378.415C359.688%2c-463.508%2c279.024%2c-545.048%2c172.825%2c-588.587C58.951%2c-635.273%2c-73.683%2c-683.875%2c-186.085%2c-633.748C-297.736%2c-583.957%2c-331.238%2c-445.054%2c-389.737%2c-337.709C-436.311%2c-252.247%2c-481.699%2c-167.548%2c-492.838%2c-70.859C-503.757%2c23.916%2c-474.249%2c113.749%2c-452.449%2c206.627C-425.103%2c323.135%2c-444.072%2c470.324%2c-348.812%2c542.762C-254.323%2c614.614%2c-118.071%2c562.927%2c0%2c550.679' fill='%231c1c1c'%3e%3c/path%3e%3cpath d='M1440 1162.8690000000001C1549.146 1143.27 1628.709 1057.078 1713.6019999999999 985.732 1788.24 923.004 1855.827 856.575 1904.778 772.2570000000001 1958.007 680.571 1996.8490000000002 583.716 2008.19 478.307 2022.22 347.913 2048.49 204.47000000000003 1977.75 94.03699999999998 1905.091-19.39300000000003 1765.507-70.71799999999996 1635.036-104.231 1507.498-136.99 1363.908-156.13699999999994 1248.154-93.36599999999999 1137.104-33.14599999999996 1128.7069999999999 123.16300000000001 1043.5810000000001 216.50099999999998 955.018 313.60699999999997 762.451 329.805 743.589 459.871 724.734 589.89 898.65 663.2090000000001 962.1179999999999 778.241 1018.851 881.065 1003.529 1023.175 1095.0149999999999 1096.808 1188.112 1171.738 1322.376 1183.99 1440 1162.8690000000001' fill='%232a2a2a'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1001'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 #question__heading {
   color: #fff;
@@ -75,7 +79,7 @@
   padding-bottom: 10%;
 }
 .languages > img {
-  width: 40%;
+  width: 30%;
 }
 .languages > h1 {
   font-size: 3rem;
@@ -90,9 +94,8 @@
   -webkit-text-fill-color: transparent;
 }
 .cards__heading {
-  -webkit-text-stroke: 1px #fff !important;
-  -webkit-text-fill-color: transparent;
-  font-size: 3rem !important;
+  color: white;
+  font-size: 2rem !important;
   margin-top: 50px;
 }
 .section p {
@@ -104,7 +107,8 @@
 .info__card {
   width: 300px;
   height: 200px;
-  background: rgb(25, 25, 25);
+  /* background: rgb(25, 25, 25); */
+  border: 1px solid #fff;
   padding: 20px;
   justify-content: space-around;
   border-radius: 20px;

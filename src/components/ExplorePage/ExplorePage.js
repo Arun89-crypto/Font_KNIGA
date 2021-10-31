@@ -53,8 +53,10 @@ function ExplorePage() {
                     </div>
                 ) : (
                     <div className="screen flex__center__vert">
-                        <img src={Lady} alt="lady" style={{ width: "100%" }}></img>
-                        <h2>Please use Desktop for better experience</h2>
+                        <div className="screen__main">
+                            <img src={Lady} alt="lady" style={{ width: "100%" }}></img>
+                            <h2>Please use Desktop for better experience</h2>
+                        </div>
                     </div>
                 )
             }
@@ -93,6 +95,8 @@ const FontsSection = ({ setSection, setFamily, setFontId }) => {
                                             <p style={{ fontFamily: `${font.font_family}` }} > {font.name}</p>
                                         </div>
                                     )
+                                } else {
+                                    return true
                                 }
                             })
                         }
@@ -115,27 +119,27 @@ const FontsSection = ({ setSection, setFamily, setFontId }) => {
                     </div>
                 )
             }
-            {/* <div className='fonts__section'>
-                {
-                    Fonts.map((font) => {
-                        return (
-                            <div className='font__card transition_3s' onClick={() => {
-                                setFamily(font.font_family);
-                                setFontId(font.id);
-                            }}>
-                                <p style={{ fontFamily: `${font.font_family}` }} > {font.name}</p>
-                            </div>
-                        )
-                    })
-                }
-            </div> */}
             <img src={Close} alt='close_button' width='30px' id='close__btn' onClick={() => setSection(false)}></img>
         </div>
     )
 }
 const Navbar = ({ setSection, setBold, bold, setCardType, cardType }) => {
+    const [position, setPosition] = useState(false);
+    const checkScroll = () => {
+        document.addEventListener('scroll', () => {
+            const height = window.scrollY;
+            if (height > (window.innerHeight)) {
+                setPosition(true)
+            } else {
+                setPosition(false)
+            }
+        })
+    }
+    useEffect(() => {
+        checkScroll()
+    }, [])
     return (
-        <nav className='width__full__pad_1 flex__around'>
+        <nav className={(position) ? 'width__full__pad_1 flex__around fix__top' : 'width__full__pad_1 flex__around'}>
             <div className='flex__center nav__link'>
                 <p onClick={() => setCardType(0)} style={{ fontWeight: `${(cardType === 0) ? 'bold' : 'normal'}`, color: `${(cardType === 0) ? '#ef476f' : '#000'}` }}>All</p>
                 <p onClick={() => setCardType(1)} style={{ fontWeight: `${(cardType === 1) ? 'bold' : 'normal'}`, color: `${(cardType === 1) ? '#ef476f' : '#000'}` }}>Flat Colors</p>
@@ -200,8 +204,7 @@ const CardsSection = ({ text, size, bold, family, fontId, cardType }) => {
                             )
                         }
                     }
-                    // return (
-                    // )
+                    return true
                 })
             }
         </div>

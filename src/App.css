@@ -6,6 +6,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=WindSong&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Teko&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 
 * {
   padding: 0px;
@@ -93,10 +107,39 @@
   transition: all 0.5s ease;
 }
 .screen {
-  width: 95%;
+  width: 100vw;
   height: 100vh;
 }
-.screen > h2 {
+.screen__main {
+  max-width: 300px;
+  width: 100%;
+}
+.screen__main > h2 {
   width: 100%;
   text-align: center;
+}
+.loading {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: white;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1000;
+}
+.loading__main {
+  height: 400px;
+  width: 400px;
+  background: white;
+}
+.loading__main > img {
+  width: 200px;
+}
+.fix__top {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+  background: white;
+  border-bottom: 2px solid #000;
 }

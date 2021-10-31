@@ -25,7 +25,7 @@ function SavedCards({ color, text, size, bold, family, font_id, cardId, hash, se
     }
     return (
         <div className='saved__card flex__center' style={{ color: `${color.color}`, background: `${color.background}` }}>
-            <p style={{ fontWeight: `${(bold) ? 'bold' : 'normal'}`, fontFamily: `${family}`, fontSize: `${size}px` }}>{text}</p>
+            <p style={{ fontWeight: `${(bold) ? 'bold' : 'normal'}`, fontFamily: `${family}`, fontSize: `${size}px`, textAlign: "center" }}>{text}</p>
             <button className="button__secondry flex__center flex__center" onClick={() => showDetails(true)} id='button_toggle'>
                 <img src={Arrow} alt='arrow' style={{ width: '30px', transform: 'rotate(270deg)' }}></img>
             </button>
@@ -34,7 +34,7 @@ function SavedCards({ color, text, size, bold, family, font_id, cardId, hash, se
             </button>
             {
                 (details) ? (
-                    <SavedCardDetails color={color} ftcolor={color.color} color={color} fontId={font_id - 1} size={size} showDetails={showDetails} bold={bold} />
+                    <SavedCardDetails color={color} ftcolor={color.color} fontId={font_id - 1} size={size} showDetails={showDetails} bold={bold} />
                 ) : ''
             }
         </div>
@@ -53,6 +53,8 @@ const SavedCardDetails = ({ color, ftcolor, size, bold, fontId, showDetails }) =
 .div {
     /*Add this code to the div*/
     background : ${color.background};
+    /* width: 'Add your width here'*/
+    /* height: 'Add your height here'*/
 }
 p{
     /*Add this code to the text class or id*/
