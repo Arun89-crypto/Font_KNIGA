@@ -45,5 +45,11 @@ npm install
   <img src="./src/images/readmeimages/4.png" width="700">
 </p>
 
+### Special thanks to:
+<p>Coolors.com</p>
+<p>uigradients.com</p>
+<p>Google fonts</p>
+
+###### Thanks for making this possible
 
 [Link to Website](https://font-kniga-890.web.app/)
